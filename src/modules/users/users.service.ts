@@ -20,9 +20,6 @@ export class UsersService {
   }
 
   getUsers(start: Date, end: Date) {
-    console.log({ start });
-    console.log({ end });
-
     if (start && end) {
       return this._users.filter(
         (u) =>
